@@ -6,6 +6,8 @@
 
 using namespace std;
 
+
+
 typedef struct studentData {
     string firstName;
     string lastName;
@@ -39,10 +41,12 @@ int main()
 
     }
 
+
+    #ifdef _DEBUG
     for (const STUDENT_DATA& s : students) {
         cout << s.firstName << " " << s.lastName << endl;
         }
-
+    #endif
 
 
     return 0;
